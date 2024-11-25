@@ -1,0 +1,52 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+}
+
+.poke-box {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 slots por linha */
+  gap: 10px;
+  padding: 20px;
+  /* background: #f2f2f2; */
+  background-image: url("../images/pokepc-box-wallpaper.png");
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  background-position: center;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 20px auto;
+}
+
+.poke-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.poke-slot img {
+  width: 50px;
+  height: 50px;
+}
+
+.poke-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.poke-level {
+  color: #777;
+}
+
+.poke-description {
+  font-size: 0.9em;
+  color: #555;
+}

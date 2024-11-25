@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/pokemons.css">
+    <link rel="stylesheet" href="../styles/toast.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <script src="https://kit.fontawesome.com/d77d2d7fee.js" crossorigin="anonymous"></script>
+    <title>Pokemons</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pokemon-terrain">
+        <div id="toast-box"></div>
+        <div class="plate">
+          <img id="gif-plate" src="../images/pokemon-plate.gif">
+          <img id="static-plate" class="hidden" src="../images/static-pokemon-plate.png">
+          <div class="pokemon-infos">
+            <span id="pokemon-name"></span>
+            <span id="pokemon-level"></span>
+          </div>
+        </div>
+        <div class="pokemon">
+          <img id="pokemon-img" alt="Pokemon">
+          <img id="ground-img" src="../images/ground.gif">
+        </div>
+        <div class="pokeball-footer">
+          <img id="catch-pokemon" title="Capturar" src="../images/pokeball-3d.png">
+          <span id="tentativas">#Tentativas#</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/pokemons.js"></script>
+    <script src="../scripts/toast.js"></script>
+  </body>
+</html>

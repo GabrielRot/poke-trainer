@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: pokemon-classic;
+  src: url(../fonts/Pokemon-Classic.ttf);
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-terrain {
+  /* background-image: url("../images/GrassyField.png"); */
+  background-image: url("../images/pokemons-field.gif");
+  background-size: cover;
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.pokemon {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon img:nth-of-type(1) {
+  width: 15vw;
+  max-width: 200px;
+  height: auto;
+  z-index: 2;
+}
+
+#ground-img {
+  width: 25vw;
+  max-width: 800px;
+  height: auto;
+  margin-top: -120px;
+  z-index: 1;
+}
+
+.pokeball-footer {
+  position: absolute; /* Permite o posicionamento dentro do container pai */
+  bottom: 10px; /* Define a distância da base */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta o ponto de referência para centralização */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo na direção horizontal */
+  gap: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.pokeball-footer img {
+  cursor: pointer;
+  width: 120px; /* Ajuste do tamanho da Pokebola */
+  height: auto;
+}
+
+.pokeball-footer span {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.plate {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(0, 0);
+  width: 190px;
+}
+
+.plate img {
+  width: 60vw;
+  height: 30vw;
+  max-height: 600px;
+}
+
+#pokemon-name, #pokemon-level {
+  position: absolute;
+  top: 8%;
+  color: black; 
+  font-size: 1.2rem;
+  font-family: pokemon-classic;
+}
+
+#pokemon-name {
+  left: 10px;
+}
+
+#pokemon-level {
+  right: -50%;
+}

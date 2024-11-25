@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="icon" href="../images/favicon.ico">
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="../videos/lugia-background.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos
+      </video>
+      <div class="overlay"></div>
+      <div class="content">
+        <div style="display: none;">#message#</div>
+        <h1 style="margin-bottom: 20px;">Seja Bem-vindo!</h1>
+        <form action="logar.php" method="POST" id="form"> 
+          <div class="login-container">
+            <label for="input-logon">Login</label>
+            <input type="text" name="logon" id="input-logon">
+          </div>
+          <div class="login-container">
+            <label for="input-senha">Senha</label>
+            <input type="password" name="senha" id="input-senha">
+          </div>
+          <button class="login-button">
+            <span>Login</span>
+          </button>
+          <div>
+            <a class="forgot-password" href="#">           
+              <span>Esqueci minha senha</span> 
+              <img title="?" src="../images/slowpoke.png" alt="Amnesia">
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- <script src="../scripts/processa-logon.js"></script> -->
+  </body>
+</html>

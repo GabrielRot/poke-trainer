@@ -1,0 +1,82 @@
+.toast {
+  width: 400px;
+  height: 80px;
+  background: #FFF;
+  font-weight: 500;
+  margin: 15px 0px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards;
+}
+
+@keyframes moveleft {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+:root {
+  --success: #008000; 
+  --error: #FF0000;
+  --warning: #FFD000;
+  --info: #0066ff;
+}
+
+.toast.success i {
+  margin: 0 20px;
+  font-size: 35px;
+  color: var(--success);
+}
+
+.toast.error i {
+  margin: 0 20px;
+  font-size: 35px;
+  color: var(--error);
+}
+
+.toast.warning i {
+  margin: 0 20px;
+  font-size: 35px;
+  color: var(--warning);
+}
+
+.toast.info i {
+  margin: 0 20px;
+  font-size: 35px;
+  color: var(--info);
+}
+
+.toast::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  animation: anim 5s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+}
+
+.toast.success::after {
+  background-color: var(--success);
+}
+
+.toast.error::after {
+  background: var(--error);
+}
+
+.toast.warning::after {
+  background: var(--warning);
+}
+
+.toast.info::after {
+  background: var(--info);
+}
